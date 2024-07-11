@@ -22,13 +22,13 @@ const About = () => {
   };
   return (
     <div className="pt-20 px-20 pb-10" ref={ref}>
-      <div className="flex flex-col xl:items-start xl:justify-between xl:flex-row lg:items-start lg:flex-row lg:justify-between pt-10 justify-center items-center">
+      <div className="flex flex-col xl:items-start xl:justify-between xl:flex-row lg:items-start lg:flex-row lg:justify-between pt-10 items-center justify-center">
         {/* Image */}
-        <div className="gs_reveal reveal_left   mb-10 lg:mb-0 xl:order-1 lg:order-1 order-2">
+        <div className="gs_reveal reveal_left  xl:order-1 lg:order-1 order-2">
           <Image
             src="/about.jpg"
             className="xl:w-[500px] xl:h-[500px] lg:w-[500
-            px] lg:h-[500px]  w-[450px] h-[450px] rounded-sm"
+            px] lg:h-[500px] sm:h-[450px] sm:w-[450px]  md:w-[450px] md:h-[450px]  rounded-sm h-full  w-full"
             width={500}
             height={500}
             alt="/about.jpg"
@@ -39,7 +39,7 @@ const About = () => {
 
         <div className="gs_reveal reveal_right w-full max-w-md lg:max-w-lg xl:flex xl:flex-col xl:items-start lg:items-start flex flex-col  items-center justify-center xl:order-1 lg:order-1 order-1">
           <motion.div
-            className="xl:text-5xl lg:text-5xl text-4xl font-Lora mb-3 text-[#46f5d5]"
+            className="text-6xl font-Lora mb-3 text-[#46f5d5]"
             initial="hidden"
             animate={controls}
             variants={itemVariants}
@@ -48,14 +48,14 @@ const About = () => {
             <LetterPullup words="About Me" delay={0.7} />
           </motion.div>
 
-          <div className="">
-            <p className="text-white text-[20px]">
+          <div className="flex items-center justify-center flex-col mt-2">
+            <p className="text-gray-300 xl:text-[18px] lg:text-[18px] text-16px xl:text-start lg:text-start text-center">
             
             Hello, I'm Abhishek, a dedicated frontend developer specializing in crafting visually appealing and functional websites. Reach out to me to collaborate on your next web development project!
             </p>
 
             <div>
-              <h4 className="text-white mt-5 text-[20px] font-medium">
+              <h4 className="text-white mt-5 xl:text-[18px] lg:text-[18px] md:text-[24px] sm:text-[24px] font-medium xl:text-start lg:text-start text-center text-[24px]">
                 My Education:-
               </h4>
               <div className="">

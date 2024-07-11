@@ -42,7 +42,7 @@ const Notification = ({ name, description, icon, color, year }: Item) => {
   return (
     <figure
       className={cn(
-        "relative mx-auto min-h-fit w-full max-w-[400px] cursor-pointer overflow-hidden rounded-2xl py-2 px-2",
+        "relative mx-auto min-h-fit xl:w-full lg:w-full md:w-full sm:w-full w-[290px] max-w-[400px] cursor-pointer overflow-hidden rounded-2xl py-2 px-2 ",
         // animation styles
         "transition-all duration-200 ease-in-out hover:scale-[103%]",
         // light styles
@@ -76,7 +76,7 @@ const Notification = ({ name, description, icon, color, year }: Item) => {
  
 export function Animatelistdemo() {
   return (
-    <div className="relative flex h-[500px] w-full flex-col p-6 overflow-hidden rounded-lg">
+    <div className="relative flex xl:h-[500px] lg:h-[500px] md:h-[400px] sm:h-[400px] h-[390px] w-full flex-col pt-4 pb-2 overflow-hidden rounded-lg">
       <AnimatedList>
         {notifications.map((item, idx) => (
           <Notification {...item} key={idx} />

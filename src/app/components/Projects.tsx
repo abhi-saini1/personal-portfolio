@@ -30,13 +30,13 @@ const Projects:React.FC = () => {
       <div className='gs_reveal reveal_left flex flex-col xl:flex-row xl:items-center xl:justify-between lg:flex lg:items-center lg:justify-center lg:flex-row md:flex md:flex-col md:items-center md:justify-center sm:flex sm:flex-col sm:items-center sm:justify-center items-center justify-center mb-10 pt-10 pb-20'>
         <div className='xl:w-[500px] xl:text-start lg:text-start text-center'>
           <h2 className='xl:text-5xl font-JetBrains font-Lora text-white mb-3 text-3xl'>01</h2>
-          <h1 className='xl:text-7xl text-white font-JetBrains font-semibold mb-3 text-5xl'>
+          <h1 className='xl:text-7xl lg:text-7xl md:text-6xl sm:text-6xl text-4xl text-white font-JetBrains font-semibold pb-3 '>
             E-commerce
           </h1>
-          <p className='text-gray-400 mb-3 text-[14px]'>
+          <p className='text-gray-400 pb-3 text-[14px]'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consequuntur quam fuga numquam aliquid obcaecati rem error eum tempore cupiditate, vitae, quo dolorum, voluptatem quod debitis nihil voluptates perspiciatis iusto.
           </p>
-          <div className='xl:flex xl:justify-start lg:justify-start flex items-center justify-center  gap-2 mb-3
+          <div className='xl:flex pt-2 xl:justify-start lg:justify-start flex items-center justify-center  gap-2 pb-3
           '>
             <Image src='/react.png' alt='' className='w-[55px] h-[55px]' width={300} height={300} />
             <Image src='/nextjs.png' alt='' className='w-[55px] h-[55px]' width={300} height={300} />
@@ -64,28 +64,28 @@ const Projects:React.FC = () => {
           <Swiper
             spaceBetween={30}
             slidesPerView={1}
-            className='xl:h-[500px] xl:w-[500px] rounded-lg'
+            className='xl:h-[500px] xl:w-[500px]  rounded-lg'
             onSlideChange={handleSlideChange}
           >
             <SwiperSlide>
-              <Image src='/projects/e1.png' quality={100} width={500} height={360} alt='Project 1 - Image 1' className='w-[500px] h-[360px]' />
+              <Image src='/projects/e1.png' quality={100} width={500} height={360} alt='Project 1 - Image 1' className='xl:w-[500px] xl:h-[360px] lg:w-[500px] lg:h-[360px] w-full h-[250px]' />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src='/projects/e2.png' quality={100} width={500} height={360} alt='Project 1 - Image 2' className='w-[500px] h-[360px]' />
+              <Image src='/projects/e2.png' quality={100} width={500} height={360} alt='Project 1 - Image 2' className='xl:w-[500px] xl:h-[360px] lg:w-[500px] lg:h-[360px] w-full h-[300px]' />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src='/projects/e3.png' quality={100} width={500} height={360} alt='Project 1 - Image 3' className='w-[500px] h-[360px]' />
+              <Image src='/projects/e3.png' quality={100} width={500} height={360} alt='Project 1 - Image 3' className='xl:w-[500px] xl:h-[360px] lg:w-[500px] lg:h-[360px] w-full h-[300px]' />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src='/projects/e4.png' quality={100} width={500} height={360} alt='Project 1 - Image 4' className='w-[500px] h-[360px]' />
+              <Image src='/projects/e4.png' quality={100} width={500} height={360} alt='Project 1 - Image 4' className='xl:w-[500px] xl:h-[360px] lg:w-[500px] lg:h-[360px] w-full h-[300px]' />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src='/projects/e5.png' quality={100} width={500} height={360} alt='Project 1 - Image 5' className='w-[500px] h-[360px]' />
+              <Image src='/projects/e5.png' quality={100} width={500} height={360} alt='Project 1 - Image 5' className='xl:w-xl:w-[500px] xl:h-[360px] lg:w-[500px] lg:h-[360px] w-full h-[300px]' />
             </SwiperSlide>
 
             {/* slider btn */}
             <div>
-              <SliderBtn containerStyles='flex gap-2 absolute left-0 bottom-[calc(50%_-_22px)] xl:bottom-20 z-20 w-full justify-between xl:w-max xl:justify-none' btnStyles='bg-accent bg-white hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all' />
+              <SliderBtn containerStyles='flex gap-2 absolute left-0 bottom-[calc(50%_-_22px)] xl:bottom-20 z-20 w-full  justify-between xl:w-max xl:justify-none' btnStyles='bg-accent bg-white hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all' />
             </div>
           </Swiper>
         </div>
@@ -95,13 +95,13 @@ const Projects:React.FC = () => {
       <div className=' gs_reveal reveal_right flex flex-col xl:flex-row xl:items-center xl:justify-between lg:flex lg:items-center lg:justify-center lg:flex-row md:flex md:flex-col md:items-center md:justify-center sm:flex sm:flex-col sm:items-center sm:justify-center items-center justify-center lg:gap-5 mb-10'>
         <div className='xl:w-[500px] xl:text-start lg:text-start xl:order-2 lg:order-2 text-center'>
           <h2 className='xl:text-5xl font-JetBrains font-Lora text-white mb-3 text-3xl'>02</h2>
-          <h1 className='xl:text-7xl text-white font-JetBrains font-semibold mb-3 text-5xl'>
+          <h1 className='xl:text-7xl lg:text-7xl md:text-6xl sm:text-6xl text-4xl text-white font-JetBrains font-semibold pb-3 '>
             Todo
           </h1>
-          <p className='text-gray-400 mb-3 text-[14px]'>
+          <p className='text-gray-400 pb-3 text-[14px]'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consequuntur quam fuga numquam aliquid obcaecati rem error eum tempore cupiditate, vitae, quo dolorum, voluptatem quod debitis nihil voluptates perspiciatis iusto.
           </p>
-          <div className='xl:flex xl:justify-start lg:justify-start flex items-center justify-center  gap-2 mb-3'>
+          <div className='xl:flex xl:justify-start lg:justify-start flex items-center justify-center  gap-2 pb-3'>
             <Image src='/react.png' alt='' className='w-[55px] h-[55px]' width={300} height={300} />
             <Image src='/nextjs.png' alt='' className='w-[55px] h-[55px]' width={300} height={300} />
             <Image src='/mongodb.png' alt='' className='w-[55px] h-[55px]' width={300} height={300} />
@@ -133,13 +133,13 @@ const Projects:React.FC = () => {
             onSlideChange={handleSlideChange}
           >
             <SwiperSlide>
-              <Image src='/projects/todo1.png' quality={100} width={500} height={360} alt='Project 2 - Image 1' className='w-[500px] h-[360px]' />
+              <Image src='/projects/todo1.png' quality={100} width={500} height={360} alt='Project 2 - Image 1' className='xl:w-[500px] xl:h-[360px] lg:w-[500px] lg:h-[360px] w-full h-[300px]' />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src='/projects/todo2.png' quality={100} width={500} height={360} alt='Project 2 - Image 2' className='w-[500px] h-[360px]' />
+              <Image src='/projects/todo2.png' quality={100} width={500} height={360} alt='Project 2 - Image 2' className='xl:w-[500px] xl:h-[360px] lg:w-[500px] lg:h-[360px] w-full h-[300px]' />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src='/projects/todo3.png' quality={100} width={500} height={360} alt='Project 2 - Image 3' className='w-[500px] h-[360px]' />
+              <Image src='/projects/todo3.png' quality={100} width={500} height={360} alt='Project 2 - Image 3' className='xl:w-[500px] xl:h-[360px] lg:w-[500px] lg:h-[360px] w-full h-[300px]' />
             </SwiperSlide>
 
             {/* slider btn */}
@@ -153,14 +153,14 @@ const Projects:React.FC = () => {
       {/* project 3 */}
       <div className=' gs_reveal reveal_left flex flex-col xl:flex-row xl:items-center xl:justify-between lg:flex lg:items-center lg:justify-center lg:flex-row md:flex md:flex-col md:items-center md:justify-center sm:flex sm:flex-col sm:items-center sm:justify-center items-center justify-center'>
         <div className='xl:w-[500px] xl:text-start  lg:text-start text-center'>
-          <h2 className='xl:text-5xl font-JetBrains font-Lora text-white mb-3 text-3xl'>03</h2>
-          <h1 className='xl:text-7xl text-white font-JetBrains font-semibold mb-3 text-5xl'>
+          <h2 className='xl:text-5xl font-JetBrains font-Lora text-white pb text-3xl'>03</h2>
+          <h1 className='xl:text-7xl lg:text-7xl md:text-6xl sm:text-6xl text-4xl text-white font-JetBrains font-semibold mb-3 '>
             Dashboard
           </h1>
-          <p className='text-gray-400 mb-3 text-[14px]'>
+          <p className='text-gray-400 pb-3 text-[14px]'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consequuntur quam fuga numquam aliquid obcaecati rem error eum tempore cupiditate, vitae, quo dolorum, voluptatem quod debitis nihil voluptates perspiciatis iusto.
           </p>
-          <div className='flex gap-2 mb-3'>
+          <div className='xl:flex xl:justify-start lg:justify-start flex items-center justify-center  gap-2 pb-3'>
             <Image src='/react.png' alt='' className='w-[55px] h-[55px]' width={300} height={300} />
             <Image src='/nextjs.png' alt='' className='w-[55px] h-[55px]' width={300} height={300} />
             <Image src='/mongodb.png' alt='' className='w-[55px] h-[55px]' width={300} height={300} />
@@ -190,19 +190,19 @@ const Projects:React.FC = () => {
             onSlideChange={handleSlideChange}
           >
             <SwiperSlide>
-              <Image src='/projects/e1.png' quality={100} width={500} height={360} alt='Project 3 - Image 1' className='w-[500px] h-[360px]' />
+              <Image src='/projects/e1.png' quality={100} width={500} height={360} alt='Project 3 - Image 1' className='xl:w-[500px] xl:h-[360px] lg:w-[500px] lg:h-[360px] w-full h-[300px]' />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src='/projects/e2.png' quality={100} width={500} height={360} alt='Project 3 - Image 2' className='w-[500px] h-[360px]' />
+              <Image src='/projects/e2.png' quality={100} width={500} height={360} alt='Project 3 - Image 2' className='xl:w-[500px] xl:h-[360px] lg:w-[500px] lg:h-[360px] w-full h-[300px]' />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src='/projects/e3.png' quality={100} width={500} height={360} alt='Project 3 - Image 3' className='w-[500px] h-[360px]' />
+              <Image src='/projects/e3.png' quality={100} width={500} height={360} alt='Project 3 - Image 3' className='xl:w-[500px] xl:h-[360px] lg:w-[500px] lg:h-[360px] w-full h-[300px]' />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src='/projects/e4.png' quality={100} width={500} height={360} alt='Project 3 - Image 4' className='w-[500px] h-[360px]' />
+              <Image src='/projects/e4.png' quality={100} width={500} height={360} alt='Project 3 - Image 4' className='xl:w-[500px] xl:h-[360px] lg:w-[500px] lg:h-[360px] w-full h-[300px]' />
             </SwiperSlide>
             <SwiperSlide>
-              <Image src='/projects/e5.png' quality={100} width={500} height={360} alt='Project 3 - Image 5' className='w-[500px] h-[360px]' />
+              <Image src='/projects/e5.png' quality={100} width={500} height={360} alt='Project 3 - Image 5' className='xl:w-[500px] xl:h-[360px] lg:w-[500px] lg:h-[360px] w-full h-[300px]' />
             </SwiperSlide>
 
             {/* slider btn */}
