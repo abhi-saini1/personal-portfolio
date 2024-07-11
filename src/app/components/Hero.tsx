@@ -31,7 +31,7 @@ const Hero = () => {
           <h3 className="h3 text-white uppercase mb-3 font-semibold">
             Hi There!
           </h3>
-          <h2 className=" h2 text-white mb-3 font-Lora font-bold">
+          <h2 className=" xl:h2 lg:h2 md:h2 sm:h2 text-[20px] text-white mb-3 font-Lora font-bold">
             I'M {""}
             <TypeAnimation
               sequence={[
@@ -68,7 +68,7 @@ const Hero = () => {
           
         </motion.div>
         {/* Image */}
-        <motion.div className="w-[450px]"
+        <motion.div className="xl:w-[400px] lg:w-[400px]"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}>

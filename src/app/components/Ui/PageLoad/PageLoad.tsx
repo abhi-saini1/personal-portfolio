@@ -13,7 +13,7 @@ const PageLoad: React.FC = () => {
     >
       {/* Text content */}
       <motion.div
-        className="fixed top-0 left-0 bottom-0 right-0 flex items-center justify-center cursor-default text-[10rem] font-Lora font-bold text-white z-20"
+        className="fixed top-0 left-0 bottom-0 right-0 flex items-center justify-center cursor-default xl:text-[10rem] lg:text-[10rem] md:text-[8rem] sm:[8rem] text-[5rem] font-Lora font-bold text-white z-20"
         initial={{ opacity: 1 }}
         animate={{ opacity: 0 }}
         exit={{ opacity: 0 }}
