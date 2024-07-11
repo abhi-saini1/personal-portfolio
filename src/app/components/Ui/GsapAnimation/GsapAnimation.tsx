@@ -37,10 +37,13 @@ const GsapAnimation: React.FC = () => {
     const hide = (elem: HTMLElement) => {
       gsap.set(elem, { autoAlpha: 0 });
     };
+    
+    const elements = gsap.utils.toArray('.gs_reveal') as HTMLElement[];
 
-    gsap.utils.toArray('.gs_reveal').forEach((elem: HTMLElement) => {
+    elements.forEach((elem)=>{
       hide(elem);
-
+      
+      
       ScrollTrigger.create({
         trigger: elem,
         markers: false,
@@ -50,6 +53,7 @@ const GsapAnimation: React.FC = () => {
         onEnterBack: () => {
           animateFrom(elem, -1);
         },
+ 
         onLeave: () => {
           hide(elem);
         }
