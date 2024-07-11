@@ -16,7 +16,7 @@ const Cursor = () => {
 
     },[])
   return (
-    <motion.div className='xl:w-[50px] xl:h-[50px]  rounded-full border border-e-white fixed z-10 transition-all duration-75 none xl:inline lg:inline  hidden'
+    <motion.div className='xl:w-[50px] xl:h-[50px]  rounded-full border border-e-white fixed z-10 transition-all duration-75 xl:block    md:hidden sm:hidden hidden'
     animate={{x:position.x+10, y:position.y+10}}>
 
     </motion.div>
