@@ -33,7 +33,7 @@ const Sidebar = () => {
     initial={false} // Disable initial animation
     animate={open ? 'open' : 'closed'}>
         <motion.div variants={variants} className='fixed '>
-            <Links/>
+            <Links setIsOpen={setIsOpen}/>
         </motion.div>
             <Menutoggle setIsOpen={()=> setIsOpen(prevState => !prevState)}/>
     </motion.div>

@@ -1,5 +1,10 @@
 import {motion} from 'framer-motion'
-import { useEffect, useState } from 'react';
+
+
+
+interface LinksProps {
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
 const variants = {
   open: {
     transition:{
@@ -24,7 +29,7 @@ const itemVariants = {
   },
 }
 
-const Links = () => {
+const Links:React.FC<LinksProps>=({setIsOpen}) => {
    const items =[
     "Home",
     "About",
@@ -41,7 +46,7 @@ const Links = () => {
           
           <motion.a href={`#${item}`} 
           className='text-4xl font-bold font-Lora nav-link ' key={item} variants={itemVariants} whileHover={{scale:1.1}} whileTap={{scale: 0.5}}
-       
+          onClick={()=>setIsOpen(false)}
           >
             {item}
           </motion.a>
