@@ -328,13 +328,21 @@ const Projects: React.FC = () => {
             />
           </div>
           <div className="flex gap-2 xl:items-start xl:justify-start lg:items-start lg:justify-start items-center justify-center">
-            <Link href="/">
+            <Link
+              href="https://github.com/abhi-saini1/dashboard"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="xl:w-[50px] xl:h-[50px] lg:w-[50px] lg:h-[50px] md:w-[45px] md:h-[45px] sm:w-[45px] sm:h-[45px] h-[32px] w-[32px] bg-transparent rounded-full border border-white flex items-center justify-center">
                 <GrGithub className="text-2xl text-white" />
               </div>
             </Link>
 
-            <Link href="/">
+            <Link
+              href="https://dashboard-mu-lake.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="xl:w-[50px] xl:h-[50px] lg:w-[50px] lg:h-[50px] md:w-[45px] md:h-[45px] sm:w-[45px] sm:h-[45px] h-[32px] w-[32px] bg-transparent rounded-full border border-white flex items-center justify-center">
                 <BiLink className="text-2xl text-white" />
               </div>
@@ -351,7 +359,7 @@ const Projects: React.FC = () => {
           >
             <SwiperSlide>
               <Image
-                src="/projects/e1.png"
+                src="/projects/dash-1.png"
                 quality={100}
                 width={500}
                 height={360}
@@ -361,7 +369,7 @@ const Projects: React.FC = () => {
             </SwiperSlide>
             <SwiperSlide>
               <Image
-                src="/projects/e2.png"
+                src="/projects/dash-2.png"
                 quality={100}
                 width={500}
                 height={360}
@@ -371,7 +379,7 @@ const Projects: React.FC = () => {
             </SwiperSlide>
             <SwiperSlide>
               <Image
-                src="/projects/e3.png"
+                src="/projects/dash-3.png"
                 quality={100}
                 width={500}
                 height={360}
@@ -381,21 +389,11 @@ const Projects: React.FC = () => {
             </SwiperSlide>
             <SwiperSlide>
               <Image
-                src="/projects/e4.png"
+                src="/projects/dash-4.png"
                 quality={100}
                 width={500}
                 height={360}
                 alt="Project 3 - Image 4"
-                className="xl:w-[500px] xl:h-[360px] lg:w-[500px] lg:h-[360px] w-full h-[300px]"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image
-                src="/projects/e5.png"
-                quality={100}
-                width={500}
-                height={360}
-                alt="Project 3 - Image 5"
                 className="xl:w-[500px] xl:h-[360px] lg:w-[500px] lg:h-[360px] w-full h-[300px]"
               />
             </SwiperSlide>

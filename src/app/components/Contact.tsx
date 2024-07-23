@@ -35,7 +35,7 @@ const Contact: React.FC = () => {
             <LetterPullup words="Contact" delay={0.7} />
           </div>
           <GsapAnimation />
-          <div className="flex flex-col items-center lg:flex-row lg:justify-between pt-10">
+          <div className="flex flex-col items-center lg:flex-row lg:justify-between pt-5">
             {/* Image */}
             <div className="gs_reveal reveal_left flex justify-center mb-10 lg:mb-0">
               <Image
@@ -54,15 +54,15 @@ const Contact: React.FC = () => {
             >
               <div className="flex flex-col items-center lg:items-start">
                 <div className="pb-3">
-                  <h3 className="xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl text-1xl font-Lora font-medium text-white">
+                  <h3 className="xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl text-[24px] font-Lora font-medium text-white">
                     Let's work,
-                    <span className="xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl text-1xl font-Lora font-medium text-white">
+                    <span className="xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl text-[24px] font-Lora font-medium text-white">
                       together!
                     </span>
                   </h3>
                 </div>
                 <div className="">
-                  <div className="flex flex-col xl:flex-row lg:flex-row gap-2 md:w-[450px] sm:w-[450px] xl:w-full w-[300px]">
+                  <div className="flex flex-col xl:flex-row lg:flex-row gap-2 md:w-[450px] sm:w-[450px] xl:w-[500px] w-[300px]">
                     <input
                       name="user_name"
                       required
