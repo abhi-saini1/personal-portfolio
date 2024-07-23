@@ -13,7 +13,7 @@ interface Item {
  
 let notifications = [
   {
-    name: "Post Graduate Diploma in Computer Applications",
+    name: "PG Diploma in Computer Applications",
     description: "Panjab University",
     year: "2022-2023",
     icon: "👨🏻‍🎓",
@@ -22,7 +22,7 @@ let notifications = [
   {
     name: "Web Development Course",
     description: "Infowiz Sec-34 in Chd",
-    year: "2022-2023",
+    year: "2021-2022",
     icon: "📜",
     color: "#FFB800",
   },
@@ -58,14 +58,14 @@ const Notification = ({ name, description, icon, color, year }: Item) => {
             backgroundColor: color,
           }}
         >
-          <span className="text-lg">{icon}</span>
+          <span className="text-sm">{icon}</span>
         </div>
         <div className="flex flex-col overflow-hidden">
           <figcaption className="flex flex-row items-center whitespace-pre text-lg font-medium dark:text-white ">
-            <span className="text-sm text-[16px] font-bold">{name}</span>
+            <span className="lg:text-[16px] md:text-[16px] sm:text-[14px] text-[12px] font-bold">{name}</span>
           </figcaption>
-            <span className="text-xs text-gray-500 font-semibold">{year}</span>
-          <p className="text-sm font-normal dark:text-white/60">
+            <span className="lg:text-[12px] md:text-[12px] sm:text-[12px] text-[11px] text-gray-500 font-semibold">{year}</span>
+          <p className="text-[12px] font-normal dark:text-white/60">
             {description}
           </p>
         </div>
