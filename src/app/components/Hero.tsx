@@ -50,14 +50,13 @@ const Hero = () => {
           <p className="text-white text-[14px] xl:text-[16px] mb-5  ">
             I’m a Freelance Frontend Developer based in Chandigarh, India. I
             strives to build
-            <br />
             immersive and beautiful web applications through carefully crafted
-            code and <br />
+            code and 
             user-centric design.
           </p>
 
           <div className="flex flex-col items-center xl:flex xl:items-start xl:justify-start  lg:flex lg:items-start lg:justify-start sm:flex-row gap-4 sm:items-center sm:justify-center">
-            <Link href="">
+            <Link href="/resume.pdf" download={true}>
               <Button type="submit">Downlaod CV</Button>
             </Link>
             <Link href="#Contact">
