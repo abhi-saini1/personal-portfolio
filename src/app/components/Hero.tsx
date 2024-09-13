@@ -56,7 +56,7 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col items-center xl:flex xl:items-start xl:justify-start  lg:flex lg:items-start lg:justify-start sm:flex-row gap-4 sm:items-center sm:justify-center">
-            <Link href="/resume.pdf" download={true}>
+            <Link href="/resume.pdf" download={true} target='_blank' rel='noopener noreferrer'>
               <Button type="submit">Downlaod CV</Button>
             </Link>
             <Link href="#Contact">
